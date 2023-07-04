@@ -15,7 +15,7 @@ public class ResetPassword extends GooglechromeRunner {
         ResetPasswordStep step1 = new ResetPasswordStep(driver);
         step1.ClickSingButton();
         step1.ClickResetPasswordButton();
-        step1.FillEmailField(Correctemail);
+        step1.FillEmailField(CorrectEmail);
         step1.ClicksendCodeButton();
 
     }
@@ -50,7 +50,7 @@ public class ResetPassword extends GooglechromeRunner {
         ResetPasswordStep step4 = new ResetPasswordStep(driver);
         step4.ClickSingButton();
         step4.ClickResetPasswordButton();
-        step4.FillEmailField( Emptyemailfield);
+        step4.FillEmailField(EmptyEmailField);
         step4.ClicksendCodeButton();
         step4.CheckEmptyField();
         Thread.sleep(5000);

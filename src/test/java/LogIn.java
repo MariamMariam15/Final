@@ -5,7 +5,7 @@ import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import org.testng.annotations.Test;
 
-import static DataObject.LogInDate.*;
+import static DataObject.LogInData.*;
 
 public class LogIn extends GooglechromeRunner {
     @Test(priority = 1)
@@ -16,7 +16,7 @@ public class LogIn extends GooglechromeRunner {
         LogInStep step1 = new LogInStep(driver);
 
         step1.SingButton();
-        step1.emailInput(CorrectEmail);
+        step1.EmailInput(CorrectEmail);
         step1.passwordInput(CorrectPassword);
         step1.LogInButton();
 
@@ -29,7 +29,7 @@ public class LogIn extends GooglechromeRunner {
 
         LogInStep step2 = new LogInStep(driver);
         step2.SingButton();
-        step2.emailInput(IncorrectEmail);
+        step2.EmailInput(IncorrectEmail);
         step2.passwordInput(CorrectPassword);
         step2.LogInButton();
         step2.IncorrectEmailValidationMessage();
@@ -42,7 +42,7 @@ public class LogIn extends GooglechromeRunner {
         LogInStep step3 = new LogInStep(driver);
 
         step3.SingButton();
-        step3.emailInput(CorrectEmail);
+        step3.EmailInput(CorrectEmail);
         step3.passwordInput(IncorrectPassword);
         step3.LogInButton();
         step3.IncorrectPasswordValidation();
@@ -56,7 +56,7 @@ public class LogIn extends GooglechromeRunner {
         LogInStep step4 = new LogInStep(driver);
 
         step4.SingButton();
-        step4.emailInput(EmailWithoutPoint);
+        step4.EmailInput(EmailWithoutPoint);
         step4.passwordInput(CorrectPassword);
         step4.LogInButton();
         step4.IncorrectEmailValidationMessage();
@@ -71,7 +71,7 @@ public class LogIn extends GooglechromeRunner {
         LogInStep step5 = new LogInStep(driver);
 
         step5.SingButton();
-        step5.emailInput(Emailwithoutcom);
+        step5.EmailInput(Emailwithoutcom);
         step5.passwordInput(IncorrectPassword);
         step5.LogInButton();
         step5.IncorrectEmailValidationMessage();
@@ -83,7 +83,7 @@ public class LogIn extends GooglechromeRunner {
     public void LogInwithIncorrectEmailandCorrectPassword() throws InterruptedException {
         LogInStep step6 = new LogInStep(driver);
         step6.SingButton();
-        step6.emailInput(IncorrectEmail);
+        step6.EmailInput(IncorrectEmail);
         step6.passwordInput(CorrectPassword);
         step6.LogInButton();
         step6.IncorrectEmailValidationMessage();
@@ -95,7 +95,7 @@ public class LogIn extends GooglechromeRunner {
     public void NonregistrationEmail() throws InterruptedException {
         LogInStep step7 = new LogInStep(driver);
         step7.SingButton();
-        step7.emailInput(NonRegistrationEmail);
+        step7.EmailInput(NonRegistrationEmail);
         step7.passwordInput(IncorrectEmail);
         step7.LogInButton();
         step7.IncorrectEmailValidationMessage();
@@ -108,7 +108,7 @@ public class LogIn extends GooglechromeRunner {
     public void validEmailandEmptyPasswordField() throws InterruptedException {
         LogInStep step8 = new LogInStep(driver);
         step8.SingButton();
-        step8.emailInput(CorrectEmail);
+        step8.EmailInput(CorrectEmail);
         step8.passwordInput(EmptyPasswordField);
         step8.LogInButton();
         step8.checkemptypasswordvalidation();
@@ -121,7 +121,7 @@ public class LogIn extends GooglechromeRunner {
     public void EmptyEmailfiledandCorrectPassword() throws InterruptedException {
         LogInStep step9 = new LogInStep(driver);
         step9.SingButton();
-        step9.emailInput(EmptyFieldEmail);
+        step9.EmailInput(EmptyFieldEmail);
         step9.passwordInput(CorrectPassword);
         step9.LogInButton();
         step9.checkemptymailvalidationmessage();
@@ -135,7 +135,7 @@ public class LogIn extends GooglechromeRunner {
     public void EmptyEmailandPasswordFields() throws InterruptedException {
         LogInStep step10 = new LogInStep(driver);
         step10.SingButton();
-        step10.emailInput(EmptyFieldEmail);
+        step10.EmailInput(EmptyFieldEmail);
         step10.passwordInput(EmptyPasswordField);
         step10.LogInButton();
         step10.checkemptymailvalidationmessage();

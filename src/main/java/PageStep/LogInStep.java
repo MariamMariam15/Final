@@ -27,7 +27,7 @@ public class LogInStep extends LogInPage {
     }
 
     @Step("Enter Email")
-    public void emailInput(String email) {
+    public void EmailInput(String email) {
         driver.findElement(Email).sendKeys(email);
 
     }

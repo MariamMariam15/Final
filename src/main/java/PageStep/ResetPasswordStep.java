@@ -15,20 +15,25 @@ public class ResetPasswordStep extends ResetPasswordPage {
     public ResetPasswordStep (WebDriver driver2){
         driver =driver2;
     }
-     @Step ("Click Sign button")
+
+    @Step ("Click Sign button")
     public void ClickSingButton (){
+
         driver.findElement(SignInButton).click();
      }
+
      @Step ("Click ResetPasswordButton")
     public void ClickResetPasswordButton(){
         driver.findElement(ResetPasswordButton).click();
     }
      @Step ("Enter Email")
     public void FillEmailField(String Email){
+
         driver.findElement(Emailfile).sendKeys(Email);
      }
      @Step ("Click Code SendButton")
     public void ClicksendCodeButton (){
+
         driver.findElement(CodeSendButton).click();
      }
 

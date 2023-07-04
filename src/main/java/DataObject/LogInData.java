@@ -2,7 +2,7 @@ package DataObject;
 
 import com.github.javafaker.Faker;
 
-public interface LogInDate {
+public interface LogInData {
    Faker faker = new Faker();
     public String
 
