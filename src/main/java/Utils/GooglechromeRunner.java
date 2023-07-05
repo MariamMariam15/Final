@@ -24,7 +24,7 @@ public  class GooglechromeRunner {
 
     }
     @AfterMethod
-    @Description("The user tries to refresh the page after running every test")
+    @Description("The user tries to close the page after running every test")
     public void closeChrome() {
         driver.quit();
 
